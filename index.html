@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio - Mi sitio web</title>
+	<style>
+		body {
+			background-color: #141414;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: 200px 1fr;
+			height: 100vh;
+		}
+		.menu {
+			background-color: #111;
+			height: 100%;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+		.menu a {
+			display: block;
+			padding: 10px;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.menu a:hover {
+			background-color: #fff;
+			color: #111;
+		}
+		.content {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-gap: 20px;
+			height: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.content h1 {
+			margin-top: 0;
+			grid-column: 1 / -1;
+		}
+		.video {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+		}
+		.video h3 {
+			margin-top: 0;
+		}
+		.video-list {
+			margin-top: 20px;
+		}
+		.video-list ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.video-list li {
+			margin-bottom: 10px;
+		}
+		.video-list a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			background-color: #333;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+		.video-list a:hover {
+			background-color: #4CAF50;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<a href="#">Inicio</a>
+			<a href="#">Buscar</a>
+		</div>
+		<div class="content">
+			<h1>Bienvenido puto profe</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0xwGhMICBgg" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/7ZqcVXUxFo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</div>
+</body>
+</html>
